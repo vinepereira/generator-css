@@ -13,8 +13,9 @@
      handleStyle[name](value);
      ```
 - Conceito de localStorage para salvar preferências do usuário diretamente no navegador:
-```const properties = Object.keys(localStorage); `// array com keys`
+```const properties = Object.keys(localStorage); // array com keys
   properties.forEach(prop => {
     handleStyle[prop](localStorage[prop]);
     controles.elements[prop].value = localStorage[prop];
-  });```
+  });
+  ```
