@@ -94,3 +94,8 @@ function showCss() {
   css.innerHTML = '<span>' + btn.style.cssText.split('; ').join(';</span><span>')
 }
 
+const media = matchMedia('(max-width: 400px)').matches;
+
+if (media) {
+  controles.querySelector('#width').max = 350;
+}
