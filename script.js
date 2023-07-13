@@ -94,8 +94,15 @@ function showCss() {
   css.innerHTML = '<span>' + btn.style.cssText.split('; ').join(';</span><span>')
 }
 
-const media = matchMedia('(max-width: 400px)').matches;
+function adjustControls() {
+  const media = window.matchMedia('(max-width: 400px)').matches;
 
-if (media) {
-  controles.querySelector('#width').max = 350;
+  if (media) {
+    controles.querySelector('#width').max = 350;
+  } else {
+    controles.querySelector('#width').max = 600;
+
+  }
 }
+
+window.addEventListener('resize', adjustControls);
