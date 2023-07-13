@@ -2,7 +2,7 @@ const controles = document.getElementById('controles');
 const css = document.querySelector('.css');
 const btn = document.querySelector('.btn');
 
-controles.addEventListener('change', handleChange);
+controles.addEventListener('input', handleChange);
 
 const handleStyle = {
   element: btn,
