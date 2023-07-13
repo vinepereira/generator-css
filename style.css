@@ -53,6 +53,18 @@
     margin-bottom: .5rem;
   }
 
+  .reset {
+    font-size: .875rem;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #00000021;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+
   @media (max-width: 540px) {
     .button-creator {
       grid-template-columns: 1fr;
