@@ -52,3 +52,27 @@
     display: block;
     margin-bottom: .5rem;
   }
+
+  @media (max-width: 540px) {
+    .button-creator {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 20px;
+    }
+
+    #controles {
+      padding: 2rem;
+      max-width: 265px;
+      width: 100%;
+    }
+
+    #controles label:first-child {
+      margin-top: 0;
+    }
+
+    .resultado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
